@@ -1,0 +1,16 @@
+nohup: ignoring input
+Processing MXE Junctions:   0%|          | 0/42355 [00:00<?, ?it/s]Processing MXE Junctions:   0%|          | 1/42355 [00:01<23:25:52,  1.99s/it]Processing MXE Junctions:   0%|          | 2/42355 [00:05<32:04:19,  2.73s/it]Processing MXE Junctions:   0%|          | 3/42355 [00:06<25:09:13,  2.14s/it]Processing MXE Junctions:   0%|          | 4/42355 [00:06<16:41:58,  1.42s/it]Processing MXE Junctions:   0%|          | 5/42355 [00:07<12:06:06,  1.03s/it]Processing MXE Junctions:   0%|          | 6/42355 [00:07<9:13:32,  1.28it/s] Processing MXE Junctions:   0%|          | 7/42355 [00:07<7:33:01,  1.56it/s]Processing MXE Junctions:   0%|          | 8/42355 [00:08<6:18:04,  1.87it/s]Processing MXE Junctions:   0%|          | 9/42355 [00:08<5:31:23,  2.13it/s]Processing MXE Junctions:   0%|          | 10/42355 [00:10<9:16:16,  1.27it/s]Processing MXE Junctions:   0%|          | 10/42355 [00:11<13:43:26,  1.17s/it]
+Traceback (most recent call last):
+  File "~/Downloads/conda/location/envs/jcast/bin/jcast", line 10, in <module>
+    sys.exit(main())
+  File "~/Downloads/conda/location/envs/jcast/lib/python3.9/site-packages/jcast/main.py", line 473, in main
+    args.func(args)
+  File "~/Downloads/conda/location/envs/jcast/lib/python3.9/site-packages/jcast/main.py", line 207, in runjcast
+    main_log.info(translate_one_partial(jx))
+  File "~/Downloads/conda/location/envs/jcast/lib/python3.9/site-packages/jcast/main.py", line 248, in _translate_one
+    sequence.translate(use_phase=True)
+  File "~/Downloads/conda/location/envs/jcast/lib/python3.9/site-packages/jcast/sequences.py", line 145, in translate
+    self.slice1_aa = h.make_pep(self.slice1_nt.seq, self.j.strand, i, terminate=True)
+  File "~/Downloads/conda/location/envs/jcast/lib/python3.9/site-packages/jcast/helpers.py", line 225, in make_pep
+    aa = code[nt[i:i + 3]]
+KeyError: 'AAX'
